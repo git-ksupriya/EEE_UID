@@ -1,0 +1,81 @@
+<html>
+<head><title> Main Paper </title>
+<link rel="stylesheet" href="C:\Users\MY PC\Desktop\Me\My_Projects\S2\EEE\main.css">
+
+</head>
+<body>
+<header align=center>
+
+RL - based Frequency Control for Renewable Energy Microgrids: MAIN PAPER   
+<br>
+</header>
+<section>
+<div>
+        <h2>Introduction</h2>
+        <p>This paper highlights frequency control challenges in microgrids due to renewable energy integration, causing instability and unpredictable changes in frequency. Traditional control methods struggle with adaptability, while reinforcement learning (RL) offers a promising solution for handling complex, nonlinear systems. Various RL-based approaches have been proposed to enhance microgrid stability, but their application remains limited.</p>
+    </div>
+
+    <div>
+        <h2>Problem Statement</h2>
+        <ul>
+            <li>Renewable energy sources like solar and wind cause frequency fluctuations due to their intermittency and instability.</li>
+            <li>Traditional methods (droop control) are not adaptive to dynamic changes in microgrids.</li>
+            <li>Reinforcement Learning (RL) is explored as a better alternative for adaptive frequency control.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Solution</h2>
+        <p>To overcome frequency instability in renewable energy microgrids, we use a Q-learning-based adaptive control system that dynamically adjusts power sources.</p>
+    </div>
+
+    <div>
+        <h2>Methodology</h2>
+        <p>The methodology follows these steps to implement reinforcement learning-based frequency control:</p>
+        <ul>
+            <li><strong>Microgrid Model:</strong> A microgrid system with solar panels, wind turbines, and battery storage is simulated in MATLAB/Simulink.</li>
+            <li><strong>Data Collection:</strong> Frequency deviations and power fluctuations are recorded as inputs for the RL algorithm.</li>
+            <li><strong>Q-Learning Algorithm:</strong> The RL agent learns the best power adjustments by maximizing rewards based on frequency stability.</li>
+            <li><strong>Training and Testing:</strong> The Q-learning model is trained using different power conditions and tested to ensure real-time adaptability.</li>
+            <li><strong>Performance Evaluation:</strong> The RL-based control is compared with traditional Droop control to verify improvements in stability.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Basic Formulae</h2>
+        
+        <h3>1. Power Balance Equation:</h3>
+        <p>The microgrid maintains balance between power generation and consumption:</p>
+        <p><b>P<sub>in</sub> - P<sub>load</sub> = P<sub>storage</sub></b></p>
+        <p>Where:</p>
+        <ul>
+            <li>P<sub>in</sub>: Total power generated from solar, wind, and other sources.</li>
+            <li>P<sub>load</sub>: Power consumed by connected loads.</li>
+            <li>P<sub>storage</sub>: Power stored in the battery or discharged when needed.</li>
+        </ul>
+
+        <h3>2. Q-Learning Algorithm:</h3>
+        <p>The RL agent updates its learning using the following equation:</p>
+        <p><b>Q(s, a) = R(s, a) + γ * max(Q(s', a'))</b></p>
+        <p>Where:</p>
+        <ul>
+            <li>Q(s, a): Q-value representing the value of taking action <i>a</i> in state <i>s</i>.</li>
+                       <li>R: Reward received for taking an action.</li>
+            <li>γ: Discount factor (determines importance of future rewards).</li>
+            <li>max(Q(s', a')): The best possible future reward.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Conclusion</h2>
+        <p>The use of reinforcement learning for frequency control in microgrids offers a dynamic and adaptive solution compared to traditional methods. The Q-learning algorithm effectively stabilizes the system by learning from frequency variations and adjusting power sources accordingly. Simulation results show that the RL-based control system provides better frequency stability than traditional methods, ensuring a reliable microgrid operation.</p>
+    </div>
+
+<div align="right">
+<a href="outline.html"><input class="button" height=10px cellpadding=20px type=button style="background-color:#e8daef;" value="Click to go Back"></a>
+</div>
+
+</section>
+
+</body>
+</html>

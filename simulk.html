@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulink Components in Microgrid</title>
+</head>
+<body>
+
+    <header>
+        <h1>Simulink Components for Microgrid</h1>
+    </header>
+
+    <section>
+        <h2>Microgrid Components</h2>
+
+        <div>
+            <h3>1. Wind Turbine</h3>
+            <img src="wind_turbine.jpg" alt="Wind Turbine" width="300">
+            <p>The wind turbine converts wind energy into electrical energy. It generates power based on wind speed and is integrated into the microgrid.</p>
+        </div>
+
+        <div>
+            <h3>2. PV Array</h3>
+            <img src="pv_array.jpg" alt="PV Array" width="300">
+            <p>The photovoltaic (PV) array generates electricity from sunlight. It is a key renewable energy source in the microgrid.</p>
+        </div>
+
+        <div>
+            <h3>3. Frequency (Phasor)</h3>
+            <img src="frequency_phasor.jpg" alt="Frequency Phasor" width="300">
+            <p>The frequency phasor block helps analyze the frequency response of the microgrid and monitors frequency deviations and ensures stability.</p>
+        </div>
+
+        <div>
+            <h3>4. Wind Source</h3>
+            <img src="wind_source.jpg" alt="Wind Source" width="300">
+            <p>The wind source block models wind speed variations to simulate real-world wind conditions for the microgrid.</p>
+        </div>
+
+        <div>
+            <h3>5. Universal Bridge</h3>
+            <img src="universal_bridge.jpg" alt="Universal Bridge" width="300">
+            <p>The universal bridge is used for AC-DC and DC-AC power conversion, essential for integrating renewable energy sources.</p>
+        </div>
+
+        <div>
+            <h3>6. PID Controller</h3>
+            <img src="pid_controller.jpg" alt="PID Controller" width="300">
+            <p>The PID controller maintains system stability by adjusting voltage and frequency based on control feedback.<br>
+If your RL agent is learning while the system operates, a PID controller can be used as a backup to stabilize the system.
+</p>
+        </div>
+
+        <div>
+            <h3>7. Signal Generator</h3>
+            <img src="signal_generator.jpg" alt="Signal Generator" width="300">
+            <p>The signal generator produces test signals for control and monitoring in the microgrid.
+it is important because RL agent learns from input and this gives input</p>
+        </div>
+
+        <div>
+            <h3>8. Controlled Voltage Source</h3>
+            <img src="controlled_voltage_source.jpg" alt="Controlled Voltage Source" width="300">
+            <p>This block provides a controlled AC or DC voltage source, used in power electronics and stability testing
+ generates voltage based on an external input signal, meaning its output changes depending on the control system.<br>
+it takes input from RL controller and change the voltage accordingly and then connected to load.<br>
+It is used in microgrids to adjust voltage dynamically, helping to regulate power flow and maintain system stability.</p>
+        </div>
+
+        <div>
+            <h3>9. Power Measurement</h3>
+            <img src="power_measurement.jpg" alt="Power Measurement" width="300">
+            <p>The power measurement block monitors real-time voltage, current, and power in the microgrid.
+these measured data sent to controllers to help in decision making</p>
+        </div>
+
+        <div>
+            <h3>10. Signal Editor</h3>
+            <img src="signal_editor.jpg" alt="Signal Editor" width="300">
+            <p>The signal editor allows users to modify and control input signals for simulation experiments.
+instead of using fixed input like signal generator,the signal lets you to create and edit custom signals before running the simulation</p>
+        </div>
+
+        <div>
+            <h3>11. 3-Phase Programmable Voltage Source</h3>
+            <img src="3_phase_voltage_source.jpg" alt="3-Phase Voltage Source" width="300">
+            <p>This block simulates a three-phase AC voltage source with programmable parameters to test different grid conditions.
+ generates AC power with adjustable voltage and frequency.<br>It simulates grid connections or independent microgrid power sources.
+Useful for testing voltage stability and system performance under different conditions.</p>
+        </div>
+
+        <div>
+            <h3>12. Dynamic Load</h3>
+            <img src="dynamic_load.jpg" alt="Dynamic Load" width="300">
+            <p>The dynamic load represents varying loads in the microgrid, helping in analyzing system performance under different conditions.</p>
+        </div>
+
+        <div>
+            <h3>13. AC Voltage Source</h3>
+            <img src="ac_voltage_source.jpg" alt="AC Voltage Source" width="300">
+            <p>The AC voltage source provides a reference voltage for testing power flow and stability in the microgrid.
+The AC Voltage Source provides a fixed or variable AC voltage for testing.<br>It helps simulate real-world power supply conditions in a microgrid.
+Used for analyzing system response to voltage and frequency changes. </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>EEE Project | Simulink Components</p>
+    </footer>
+
+</body>
+</html>
