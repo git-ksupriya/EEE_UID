@@ -1,0 +1,71 @@
+<html>
+<head><title> Terms </title>
+<link rel="stylesheet" href="C:\Users\MY PC\Desktop\Me\My_Projects\S2\EEE\main.css">
+
+</head>
+<body>
+
+<header align=center>
+RL - based Frequency Control for Renewable Energy Microgrids: TERMS
+<br> 
+</header>
+
+<section>
+<h1>
+These are the Key Components for the PV Grid Model:
+</h1>
+
+<dl>
+<dt>PV Array:</dt>
+<dd>This is your solar panel. It takes sunlight (represented by the input 'Ir' which stands for irradiance) and converts it into DC (Direct Current) electricity. The temperature ('T') also affects its performance. Think of it like the power source of the whole system.</dd>
+<br>
+
+<dt>Boost Converter:</dt>
+<dd>A boost converter increases voltage using an inductor, switch, diode, and capacitor. The inductor stores energy when the switch (MOSFET/IGBT) is ON. When the switch turns OFF, the inductor releases energy, increasing voltage. The diode allows only the boosted voltage to pass. The capacitor stores the output for a stable DC voltage.</dd>
+<br>
+
+<dt>Universal Bridge (Inverter):</dt>
+<dd>This component changes the DC electricity from the boost converter into AC (Alternating Current) electricity. It uses switches that are turned on and off in a specific pattern..</dd>
+<br>
+
+<dt>Load:</dt>
+<dd>This represents whatever the solar power system is powering (e.g., a house, a grid). In this model, it looks like a simple resistor, representing a basic electrical load.</dd>
+<br>
+
+<dt>Measurement Blocks:</dt>
+<dd>Voltage Measurement: This block measures the voltage at a specific point in the circuit, allowing you to monitor the system's performance. The scopes display the measured values during the simulation.</dd>
+<br>
+
+
+<dt>Capacitor next to the PV array:</dt>
+<dd>The capacitor stabilizes the solar panel's DC voltage output. It smooths out any voltage ripples or fluctuations. This ensures a cleaner and more consistent DC supply. It acts as a temporary energy buffer. This improved voltage quality benefits the boost converter's performance.</dd>
+<br>
+
+
+<dt>PWM generator:</dt>
+<dd>The PWM generator controls the Universal Bridge switches. It sends ON/OFF signals to these switches.
+By varying the pulse width, it regulates voltage flow. This creates the desired AC output from DC input.</dd>
+<br>
+
+
+<dt>Reinforcement learning (RL)</dt>
+<dd> A type of machine learning where agents learn optimal actions through rewards and penalties in an environment to achieve goals.</dd>
+<br>
+
+<dt>Q-Learning</dt>
+<dd>An RL algorithm that helps agents learn the best actions to take in a given state by maximizing cumulative rewards over time.</dd>
+<br>
+
+<dt>State, Action, Reward</dt>
+<dd>The core components of RL: State represents the environment, Action is the decision made, and Reward is feedback on the action's effectiveness.</dd>
+<br>
+<br>
+<br>
+<br>
+<div align="right">
+<a href="outline.html"><input class="button" height=10px cellpadding=20px type=button style="background-color:#e8daef;" value="Click to go Back"></a>
+</div>
+<br>
+</section>
+</body>
+</html>
