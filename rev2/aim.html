@@ -1,5 +1,5 @@
 <html>
-<head><title> Aim </title>
+<head><title> Aim </title>  
 <link rel="stylesheet" href="C:\Users\MY PC\Desktop\Me\My_Projects\S2\EEE\main.css">
 
 </head>
@@ -10,10 +10,69 @@ Reinforcement Learning-based Frequency Control for Renewable Energy Microgrids
 <br>
 </header>
 <br>
-
-
+<p>
 This project focuses on using Reinforcement Learning (RL) to maintain stable frequency in a renewable energy microgrid by adjusting power flow intelligently.
+<br>We are also doing three phase stand-alone inverter design with a Droop and PI controller using MATLAB Simulink
 
+Main goals are
+  <ul>
+    <li>Stand-Alone Operation
+<li> Droop Control Implementation
+<li>Role of PI Controller
+<li>MATLAB Simulink Validation
+  </ul>
+<br>
+1. Stand-Alone Operation : Stand-alone operation refers to a system that operates independently, without being connected to an external power grid or any other external power source. 
+<br>(i) The inverter generates its own AC power from a DC source. It does not depend on the grid for power supply.
+<br>(ii) The system is completely disconnected from the main power grid.This is common in remote areas, off-grid locations, or during power outages.
+
+
+<br><br>
+2. Droop Control Implementation : Droop control is a decentralized control strategy used to regulate the frequency and voltage of an inverter's output in response to changes in load demand. It mimics the behavior of traditional power grids, where generators adjust their output based on load changes.
+<br>(i) In a stand-alone inverter system (or a microgrid), there is no central authority (like the main grid) to control the frequency and voltage. Droop control allows multiple inverters to work together seamlessly and share the load without needing communication between them.
+<br>(ii) Droop control works by adjusting the frequency and voltage of the inverter's output based on the active power (P) and reactive power (Q) demanded by the load.
+a.) 1. Active Power (P) vs. Frequency (f) Droop
+<br>
+When the load increases, the frequency tends to drop.<br>
+The droop control reduces the frequency slightly as the active power demand increases.<br>
+The relationship is given by : f=fo−mp⋅P<br>
+Where <br>
+f: Output frequency.<br>
+fo: No-load frequency (setpoint).<br>
+mp: Frequency droop coefficient.<Br>
+P: Active power.<br><br>
+
+b.) Reactive Power (Q) vs. Voltage (V) Droop<br>
+When the load increases, the voltage tends to drop.The droop control reduces the voltage slightly as the reactive power demand increases.
+The relationship is given by :<br><br>
+V = Vo - nq . Q<br>
+Where <br>
+V: Output voltage.<br>
+Vo : No-load voltage (setpoint).<br>
+nq: Voltage droop coefficient.<br>
+Q: Reactive power.<br><br>
+
+3. Role of PI Controller : A PI controller is a feedback control mechanism that adjusts the output of a system based on the error (the difference between the desired setpoint and the actual output). It consists of two terms:<br>
+<br>
+Proportional (P) Term: Responds to the current error.
+<br>
+Integral (I) Term: Responds to the accumulation of past errors.
+<br>
+The output of a PI controller is given by:
+<br>
+u(t) = Kp⋅e(t) + Ki⋅∫e(t) dt
+<br>
+  Where:
+<br>
+u(t) : Controller output.<br>
+e(t) : Error (setpoint - actual value).<br>
+Kp : Proportional gain.<br>
+Ki​ : Integral gain.<br><br>
+
+4. MATLAB Simulink Validation : Validation in Simulink refers to the process of testing and verifying that your model (e.g., your three-phase stand-alone inverter) behaves correctly and meets the desired specifications. It involves comparing the simulation results with theoretical expectations, real-world data, or design requirements.
+<br><br>
+</p>
+  
 <dl>
 
 <dt>What is a Microgrid:</dt>
