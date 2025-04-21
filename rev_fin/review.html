@@ -1,0 +1,107 @@
+<html>
+<head><title> Inverter </title>
+<link rel="stylesheet" href="C:\Users\megha\Downloads\UID\main.css">
+
+</head>
+<body align="center"><header align=center>
+Reinforcement Learning-based Frequency Control for Renewable Energy Microgrids
+<br> 
+</header>
+
+<section style="text-align: center;">
+  <table border="2" style="margin: auto;">
+    <caption><b>Main Paper Summary</b></caption>
+    <tr>
+      <th>Paper Name</th>
+      <th>About</th>
+      <th>Purpose of the Paper</th>
+      <th>Results / Advantages</th>
+      <th>Limitations</th>
+      <th>Conclusion</th>
+    </tr>
+    <tr>
+      <td><b>Reinforcement Learning-based Frequency Control for Renewable Energy Microgrids</b></td>
+      <td>
+        The paper proposes a Q-learning-based reinforcement learning method for secondary frequency control in renewable energy microgrids to improve stability under intermittent and fluctuating power conditions.
+      </td>
+      <td>
+        The purpose of this paper is to develop a Q-learning-based frequency control strategy to enhance the stability and performance of islanded renewable energy microgrids.
+      </td>
+      <td>
+        The proposed Q-learning-based frequency control method for renewable energy microgrids significantly improves frequency stability, adapts quickly to disturbances and power fluctuations, and outperforms traditional PID and DDPG controllers in accuracy and robustness.
+      </td>
+      <td>
+        The paper's main limitation is its reliance on a simplified microgrid model, which may not fully capture the complexities and scalability challenges of real-world microgrid systems.
+      </td>
+      <td>
+        The paper concludes that the Q-learning-based controller effectively enhances frequency stability and adaptability in renewable microgrids under various disturbance scenarios.
+      </td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- Existing Literature Review Table -->
+  <table border="2" style="margin: auto;">
+    <caption><b>Literature Review</b></caption>
+    <tr>
+      <th>Paper name</th>
+      <th>About</th>
+      <th>Purpose of the Paper</th>
+      <th>Results/Advantages</th>
+      <th>Limitations</th>
+      <th>Relation with Main Paper</th>
+    </tr>
+
+    <tr>
+      <td><b>A Review of Droop Control Techniques for Microgrid</b></td>
+      <td>This paper reviews various droop control techniques used for managing distributed generation (DG) units within a microgrid. <br><br>
+      Droop control is a widely accepted method for load sharing among inverters without requiring communication links.</td>
+      <td>The purpose of the paper "A Review of Droop Control Techniques for Microgrid" is to provide a comprehensive overview of conventional and advanced droop control strategies used for coordinating distributed generation units in microgrids, highlighting their advantages, limitations, and recent developments for improving power sharing, stability, and voltage regulation.</td>
+      <td>Stable Power Sharing – Droop control helps distribute power between different DG sources without communication.<br><br>
+      Simpler System Operation – Reduces the need for centralized control.</td>
+      <td>Slow response to sudden load changes.<br><br>
+      Lack of coordination leads to inefficient power distribution.</td>
+      <td>The paper on droop control techniques provides the theoretical backbone and limitations of traditional frequency regulation methods, which our main paper overcomes using reinforcement learning for adaptive and intelligent frequency control in microgrids.</td>
+    </tr>
+
+    <tr>
+      <td><b>Frequency-based control of islanded microgrid with renewable energy sources and energy storage</b></td>
+      <td>This paper presents a frequency-based control strategy for an islanded microgrid powered by RES and ESS, where the battery’s state of charge influences frequency regulation without communication between DERs.</td>
+      <td>The purpose of the paper is to propose a frequency-based decentralized control strategy for an islanded microgrid with renewable energy sources and battery storage, which ensures power balance, and extends battery life without requiring communication between distributed energy resources.</td>
+      <td>Maintains frequency within strict limits.<br><br>
+      Handles faults by leveraging battery converter’s fault current capability.</td>
+      <td>Relies heavily on battery for all power mismatches.<br><br>
+      Limited exploration of protection coordination for severe disturbances.</td>
+      <td>The frequency-based control paper provides a foundational model for decentralized frequency regulation using battery SoC, which your main paper builds upon by introducing reinforcement learning to optimize and adapt frequency control dynamically.</td>
+    </tr>
+
+    <tr>
+      <td><b>Frequency Regulation of a Microgrid Using Solar Power</b></td>
+      <td>This paper presents a solar-based system that regulates the frequency of an islanded microgrid by dynamically adjusting power output from a PV panel through a boost converter and inverter control.</td>
+      <td>The purpose of paper is to maintain frequency stability in an islanded microgrid using a solar-powered system with a boost converter and inverter control.</td>
+      <td>The paper shows that the solar-based system effectively maintains microgrid frequency during load changes, offering a simple, responsive, and reliable method for frequency regulation using renewable energy.</td>
+      <td>The main limitation of the paper is its reliance on hardware-specific control with limited adaptability, lacking intelligent decision-making for varying and complex microgrid scenarios.</td>
+      <td>This paper provides a traditional solar-based frequency control foundation, which the main paper advances using adaptive Q-learning for smarter microgrid regulation.</td>
+    </tr>
+
+    <tr>
+      <td><b>Deep Multi-Agent Reinforcement Learning for Cost-Efficient Distributed Load Frequency Control</b></td>
+      <td>This paper proposes a fully distributed, cost-efficient load frequency control method using Deep Multi-Agent Reinforcement Learning (MADDPG), enabling decentralized coordination of generators without centralized communication.</td>
+      <td>The purpose of paper is to implement load frequency control across all control layers in a power system using a decentralized, cost-efficient Deep Multi-Agent Reinforcement Learning (MADDPG) framework.</td>
+      <td>This shows that the proposed MADDPG-based method effectively restores system frequency and minimizes generation cost in a fully distributed manner, offering advantages like no need for centralized communication, scalability, adaptability to uncertainties, and integration of economic dispatch.</td>
+      <td>The learned policies may converge to sub-optimal solutions due to local optima in the reward design, and the training process can be computationally intensive and sensitive to hyperparameter tuning.</td>
+      <td>The main paper uses a simpler 'single-agent Q-learning' approach for frequency control in microgrids, while this extends this idea to a more complex, scalable 'multi-agent deep reinforcement learning' framework for distributed and cost-efficient load frequency control.</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+<div align="center">
+<a href="outline.html"><input class="button" height=10px cellpadding=20px type=button style="background-color:#e8daef;" value="Click to go Back"></a>
+</div>
+</section>
+
+<br>
+</body>
+</html>

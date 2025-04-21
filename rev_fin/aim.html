@@ -1,0 +1,82 @@
+<html>
+<head><title> Aim </title>  
+<link rel="stylesheet" href="C:\Users\megha\Downloads\UID\main.css">
+
+</head>
+<body style="background-color:FAF3F0;">
+
+<header align=center>
+Reinforcement Learning-based Frequency Control for Renewable Energy Microgrids
+<br>
+</header>
+<br>
+<p>
+This project focuses on maintaining a stable frequency in a renewable energy-based stand-alone microgrid using <b>Reinforcement Learning (RL)</b>. The RL agent intelligently adjusts the inverter’s modulation index to respond to varying loads and disturbances, thereby regulating frequency in real time.
+<br><br>
+Our base model in <b>MATLAB Simulink</b> consists of a PV source, a boost converter, a single-phase inverter using a Universal Bridge, and variable resistive loads. The inverter is controlled using PWM signals, where the modulation index is the primary input tuned by the RL agent.
+</p>
+
+<h3>Main Goals:</h3>
+<ul>
+  <li>Reinforcement Learning-Based Frequency Control</li>
+  <li>Making a base model to verify the performance</li>
+  <li>MATLAB Simulink Model Validation</li>
+</ul>
+
+<p>
+ DC power from a PV source is stepped up using a boost converter and then converted to AC using a single-phase inverter (Universal Bridge). 
+<br>
+<b>Dynamic resistive loads</b> are applied to represent real-life load fluctuations.
+</p>
+
+<h3>2. Reinforcement Learning-Based Frequency Control:</h3>
+<p>
+An RL agent is trained to maintain the system's output frequency close to 60 Hz by dynamically adjusting the <b>modulation index</b> of the PWM signal fed to the Universal Bridge inverter.
+</p>
+<ul>
+  <li><b>State:</b> Includes current frequency deviation </li>
+  <li><b>Action:</b> Adjusting the modulation index (value between 0 and 1).</li>
+  <li><b>Reward:</b> High reward when frequency stays near 60 Hz; penalized for deviations.</li>
+</ul>
+<p>
+The RL controller replaces traditional fixed logic by learning optimal control under variable load conditions.
+</p>
+
+<h3>5. MATLAB Simulink Validation:</h3>
+<p>
+Our simulation model includes:
+<ul>
+  <li>PV source + Boost Converter (gain + saturation control)</li>
+  <li>Single-phase inverter using Universal Bridge</li>
+  <li>PWM Generator controlled by modulation index</li>
+  <li>LC Filter for output smoothing</li>
+  <li>Three dynamic resistive loads</li>
+</ul>
+<p>
+Performance is evaluated by using  scopes to read frequency, camparison with the base model, and RL behavior under disturbances.
+</p>
+
+<h3>What is a Microgrid?</h3>
+<p>
+A localized grid system with renewable sources (like solar PV), local loads, and storage or control systems. It can function with or without the main grid.
+</p>
+
+<h3>Problem Addressed:</h3>
+<p>
+Stand-alone microgrids face frequency instability due to load and source variability. Our model uses RL to learn adaptive control policies in real-time.
+</p>
+
+<h3>Project Objective:</h3>
+<p>
+To stabilize frequency at 60 Hz using a lightweight RL-based controller and validate its efficiency through Simulink modeling and simulation.
+</p>
+
+<img src="rl.jpg">
+
+<br>
+<div align="right">
+<a href="outline.html"><input class="button" height=10px cellpadding=20px type=button style="background-color:#e8daef;" value="Click to go Back"></a>
+</div>
+<br>
+</body>
+</html>
