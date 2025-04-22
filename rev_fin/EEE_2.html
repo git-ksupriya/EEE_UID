@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EEE Project Login</title>
+  <link rel="stylesheet" href="C:\Users\megha\Downloads\UID\main.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      color: #003366;
+    }
+    #mahe {
+      font-size: 69px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="mahe">WELCOME TO EEE PROJECT</h1>
+
+  <form onsubmit="return validateForm(event)">
+    <div>
+      <input type="text" id="username" placeholder="Enter Username" required>
+    </div>
+    <div>
+      <input type="text" id="secretCode" placeholder="Enter Secret Code" required>
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+    <div id="errorMsg" class="error"></div>
+  </form>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const username = document.getElementById("username").value;
+      const secretCode = document.getElementById("secretCode").value;
+      const errorMsg = document.getElementById("errorMsg");
+
+      const usernameRegex = /^(cb\.sc\.)[a-zA-Z0-9]{2,15}$/i;
+
+      if (!usernameRegex.test(username)) {
+        errorMsg.textContent = "Hey kid !!! Your username must start with cb.sc. ";
+        return false;
+      }
+
+      if (secretCode !== "Login@2025") {
+        errorMsg.textContent = "Incorrect secret code. Please enter the correct code.";
+        return false;
+      }
+
+      errorMsg.textContent = "";
+      alert("Login successful!");
+
+      // Redirect after success
+      window.location.href = "file:///C:/Users/megha/Downloads/UID/outline.html";
+      return true;
+    }
+  </script>
+
+</body>
+</html>
